@@ -1,4 +1,4 @@
-#include <stdio.h>
+0;10;1c0;10;1c#include <stdio.h>
 /**
  * main - Entry point 
  *
@@ -6,5 +6,6 @@
  */
 int main(void)
 {
+	printf("Hello")
 	return(0)
 }

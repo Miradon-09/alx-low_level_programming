@@ -1,4 +1,4 @@
-#include "main.h"
+0;10;1c0;10;1c#include "main.h"
 /**
  * print_alphabet - Entry point
  * Return: void ,success

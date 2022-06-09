@@ -10,7 +10,7 @@ int main(void)
 	int z;
 	int sum = 0;
 
-	for (z = 0; z < x; y++)
+	for (z = 0; z < x; z++)
 	{
 		if ((z % 3 == 0) || (z % 5 == 0))
 		{

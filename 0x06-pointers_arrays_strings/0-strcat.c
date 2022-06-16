@@ -6,16 +6,16 @@
  * @src: an input string
  * Return: A pointer to the resulting string
  */
-  char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-  char *now = dest;
+	char *now = dest;
 
-  while (*dest)
-    dest++;
+	while (*dest)
+		dest++;
 
-  while (*src)
-    *dest++ = *src++;
+	while (*src)
+		*dest++ = *src++;
 
-  *dest = '\0';
-  return (now);
+	*dest = '\0';
+	return (now);
 }

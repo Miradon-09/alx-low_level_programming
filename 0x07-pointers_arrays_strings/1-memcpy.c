@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _memcpy: function copy form a source file to destination file
@@ -11,13 +12,13 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *start = dest;
+	unsigned int i;
 
-	while (n--)
-	{
-		dest = src;
-		src++;
-		dest++;
-	}
+	if (dest == NULL)
+		return NULL;
+	
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
 	
 	return (start);
 }

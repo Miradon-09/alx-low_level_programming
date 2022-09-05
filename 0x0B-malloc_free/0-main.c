@@ -17,6 +17,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
   while (i < size)
     {
       if (i % 10)
+<<<<<<< HEAD
 	{
 	  printf(" ");
 	}
@@ -24,6 +25,15 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	{
 	  printf("\n");
 	}
+=======
+        {
+	  printf(" ");
+        }
+      if (!(i % 10) && i)
+        {
+	  printf("\n");
+        }
+>>>>>>> 756f853d5e6a033dcd47462839a90bb2ae1e03b8
       printf("0x%02x", buffer[i]);
       i++;
     }
@@ -31,7 +41,11 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
+<<<<<<< HEAD
  * main - check the code for ALX School students.
+=======
+ * main - check the code for Holberton School students.
+>>>>>>> 756f853d5e6a033dcd47462839a90bb2ae1e03b8
  *
  * Return: Always 0.
  */
@@ -39,7 +53,11 @@ int main(void)
 {
   char *buffer;
 
+<<<<<<< HEAD
   buffer = create_array(98, 'H');
+=======
+buffer = create_array(98, 'H');
+>>>>>>> 756f853d5e6a033dcd47462839a90bb2ae1e03b8
   if  (buffer == NULL)
     {
       printf("failed to allocate memory\n");
